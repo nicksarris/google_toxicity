@@ -29,15 +29,7 @@ function App() {
   }
   /* Useful Functions */
   function submitToxicity() {
-    setLoading(true);
-    calculateToxicity().then((response) => {
-      setLoading(false);
-      setToxicity(response.toxicityScore)
-      console.log(response)
-    })
-  }
-  function submitToxicitySecondary(e) {
-    if (e.key === 'Enter') {
+    if (isLoading === false) {
       setLoading(true);
       calculateToxicity().then((response) => {
         setLoading(false);
@@ -45,10 +37,19 @@ function App() {
       })
     }
   }
+  function submitToxicitySecondary(e) {
+    if (isLoading === false) {
+      if (e.key === 'Enter') {
+        setLoading(true);
+        calculateToxicity().then((response) => {
+          setLoading(false);
+          setToxicity(response.toxicityScore)
+        })
+      }
+    }
+  }
   const active = (isLoading === true) ? "google-active" : ""
   const margin = (isLoading === true) ? "google-margin" : ""
-  const disable = (isLoading === true) ? true: ""
-
   return (
     <div className="google-container">
       <div className="google-header">
@@ -82,10 +83,9 @@ function App() {
       </div>
       <div className="google-secondary">
         <div className="google-button-container">
-          <button className="google-button"
+          <div className="google-button"
                   onClick={submitToxicity}
-                  onKeyDown={submitToxicity}
-                  disabled={disable}>Calculate Toxicity</button>
+                  onKeyDown={submitToxicity}>Calculate Toxicity</div>
           <a href="http://google.com" className="google-button">Return to Google</a>
         </div>
       </div>
