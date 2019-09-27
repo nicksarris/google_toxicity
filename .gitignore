@@ -1,0 +1,4 @@
+node_modules
+service/uncased_L-12_H-768_A-12
+service/bert_pytorch_model.bin
+service/__pycache__

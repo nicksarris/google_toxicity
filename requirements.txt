@@ -1,0 +1,11 @@
+numpy
+torch
+pandas==0.24.0
+fastai
+sklearn
+keras
+nltk
+tqdm
+tensorflow
+pytorch-pretrained-bert
+Flask
