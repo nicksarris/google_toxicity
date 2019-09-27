@@ -20,8 +20,8 @@ sudo pip install -r requirements.txt
 
 In order to save space, I hosted the trained models on Google Drive. Use the following links to download both and place them in the "service" folder as indicated by ".gitkeep"
 
-- Link 1 - bert_pytorch_model.bin - [Google Drive Link (bert_pytorch_model.bin)](https://drive.google.com/file/d/1TBflpUhF02InlANzLWMBYd6NoAvV4ldc/view?usp=sharing)
-- Link 2 - uncased_L-12_H-768_A-12 - [Google Drive Link (uncased-L-12_H-768_A-12)](https://drive.google.com/file/d/1LI38JwWIMB7vZoU8UFuLjvWcU0Ae6FFt/view?usp=sharing)
+- Link 1 - bert_pytorch_model.bin - [Google Drive Link (bert_pytorch_model.bin)](https://drive.google.com/a/virginia.edu/uc?id=1TBflpUhF02InlANzLWMBYd6NoAvV4ldc&export=download)
+- Link 2 - uncased_L-12_H-768_A-12 - [Google Drive Link (uncased-L-12_H-768_A-12)](https://drive.google.com/a/virginia.edu/uc?id=1LI38JwWIMB7vZoU8UFuLjvWcU0Ae6FFt&export=download)
 
 ### Using the Service: 
 
