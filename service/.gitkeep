@@ -1,7 +1,7 @@
-Placeholder to put Bert Files: "uncased_L-12_H-768_A-12/, bert_pytorch_model.bin"
+Placeholder to put Bert Files: "bert_pytorch_model.bin, uncased_L-12_H-768_A-12/"
 
 Note: "uncased_L-12_H-768_A-12" must include a model converted to PyTorch syntax.
 Note: The below link already contains a working conversion
 
-Downloadable Link (uncased): https://drive.google.com/file/d/1LI38JwWIMB7vZoU8UFuLjvWcU0Ae6FFt/view?usp=sharing
 Downloadable Link (pytorch_model): https://drive.google.com/file/d/1TBflpUhF02InlANzLWMBYd6NoAvV4ldc/view?usp=sharing
+Downloadable Link (uncased): https://drive.google.com/file/d/1LI38JwWIMB7vZoU8UFuLjvWcU0Ae6FFt/view?usp=sharing

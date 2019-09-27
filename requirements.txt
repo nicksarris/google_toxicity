@@ -9,3 +9,4 @@ tqdm
 tensorflow
 pytorch-pretrained-bert
 Flask
+flask-cors
