@@ -3,11 +3,8 @@ import subprocess
 from service.flask_service import main as FlaskApp
 
 def main():
-
-    # Start Web Application (NodeJS)"
-    subprocess.call("sudo npm start &", shell=True)
-    # Start Flask Server (Python)
-    flask_server = FlaskApp()
+    subprocess.call("sudo npm start &", shell=True) # Start Web Application (NodeJS)"
+    flask_server = FlaskApp() # Start Flask Server (Python)
 
 if __name__ == "__main__":
     main()
