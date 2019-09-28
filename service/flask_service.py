@@ -15,6 +15,7 @@ from pytorch_pretrained_bert.modeling import BertPreTrainedModel, BertModel
 from pytorch_pretrained_bert import BertTokenizer, BertConfig
 
 app = Flask(__name__)
+app.config['CORS_HEADERS'] = 'Content-Type'
 api = CORS(app, resources={r"/*": {"origins": "*"}})
 
 class MyBertClassifier(BertPreTrainedModel):
@@ -59,6 +60,7 @@ for param in model.parameters():
 model.eval()
 
 @app.route('/toxicity', methods=["POST"])
+@cross_origin(origin='*',headers=['Content- Type','Authorization'])
 def toxicity():
     toxic_string = [str(request.get_json()["inputText"])]
     toxicity = str(calculate_toxicity(model, toxic_string)[0][0])
